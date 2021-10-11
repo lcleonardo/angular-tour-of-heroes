@@ -8,14 +8,15 @@ import { Hero } from './shared/Hero'
   styleUrls: ['./heroes.component.css'],
 })
 export class HeroesComponent implements OnInit {
-  hero: Hero = {
-    id: 1,
-    name: 'Leonardo',
-  }
+  selectedHero?: Hero
 
   heroes: Hero[] = HEROES
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  public onSelect(hero: Hero): void {
+    this.selectedHero = hero
+  }
 }
