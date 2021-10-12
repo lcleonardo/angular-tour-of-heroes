@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core'
-import { Router, RouterModule, Routes } from '@angular/router'
+import { RouterModule, Routes } from '@angular/router'
 import { HeroesComponent } from './featured/components/heroes/heroes.component'
 
 const routes: Routes = [
